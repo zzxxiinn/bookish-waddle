@@ -1,0 +1,17 @@
+.layoutHeader {
+  position: relative;
+
+  .headerActions {
+    position: absolute;
+    height: 100%;
+    top: 0;
+
+    &.prev {
+      left: 0;
+    }
+
+    &.post {
+      right: 0;
+    }
+  }
+}
