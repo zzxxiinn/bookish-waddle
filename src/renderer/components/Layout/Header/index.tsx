@@ -1,5 +1,5 @@
 import style from "./index.module.scss";
-import cn from "@/utils/classnames";
+import classnames from "@renderer/utils/classnames";
 
 interface HeaderProps {
   title: string;
@@ -12,12 +12,14 @@ function HeaderClose() {
 export default function Header({ title }: HeaderProps) {
   console.log(style);
   return (
-    <header className={cn("toolbar", "toolbar-header", style.layoutHeader)}>
-      <div className={cn(style.headerActions, style.prev)}></div>
+    <header
+      className={classnames("toolbar", "toolbar-header", style.layoutHeader)}
+    >
+      <div className={classnames(style.headerActions, style.prev)}></div>
 
       <h1 className="title">{title}</h1>
 
-      <div className={cn(style.headerActions, style.post)}>
+      <div className={classnames(style.headerActions, style.post)}>
         <HeaderClose />
       </div>
     </header>

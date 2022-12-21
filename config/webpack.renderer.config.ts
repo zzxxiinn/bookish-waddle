@@ -16,5 +16,8 @@ export const rendererConfig: Configuration = {
   plugins,
   resolve: {
     extensions: [".js", ".ts", ".jsx", ".tsx", ".css", ".scss", ".sass"],
+    alias: {
+      "@renderer": path.resolve(__dirname, "src/renderer"),
+    },
   },
 };
