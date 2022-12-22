@@ -6,7 +6,11 @@ interface HeaderProps {
 }
 
 function HeaderClose() {
-  return <span className="icon icon-cancel"></span>;
+  return (
+    <button className={style.headerActionButton}>
+      <span className={classnames("icon", "icon-cancel")}></span>
+    </button>
+  );
 }
 
 export default function Header({ title }: HeaderProps) {

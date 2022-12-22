@@ -4,6 +4,10 @@
   .headerActions {
     position: absolute;
     height: 100%;
+    padding-right: 4px;
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
     top: 0;
 
     &.prev {
@@ -13,5 +17,28 @@
     &.post {
       right: 0;
     }
+  }
+}
+
+.headerActionButton {
+  border: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  transition: all 200ms;
+  cursor: pointer;
+  font-size: 10px;
+  padding: 3px;
+  text-align: center;
+
+  color: rgb(161, 0, 0);
+  background: rgba(255, 15, 15, 0.2);
+
+  &:hover {
+    background: rgba(255, 15, 15, 0.4);
+
   }
 }
