@@ -13,6 +13,14 @@ function HeaderClose() {
   );
 }
 
+function HeaderMinimize() {
+  return (
+    <button className={style.headerActionButton}>
+      <span className={classnames("icon", "icon-cancel")}></span>
+    </button>
+  );
+}
+
 export default function Header({ title }: HeaderProps) {
   console.log(style);
   return (
@@ -25,6 +33,7 @@ export default function Header({ title }: HeaderProps) {
 
       <div className={classnames(style.headerActions, style.post)}>
         <HeaderClose />
+        <HeaderMinimize />
       </div>
     </header>
   );
